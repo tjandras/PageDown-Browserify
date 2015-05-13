@@ -1,2 +1,3 @@
 # PageDown-Browserify
-Modified PageDown so it can be used with Browserify.
+
+Modified [PageDown](https://github.com/ujifgc/pagedown) so it can be used with Browserify.
