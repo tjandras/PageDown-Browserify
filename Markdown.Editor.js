@@ -1942,7 +1942,9 @@
                     match = "\n";
                 }
             }
-            if (!/(^|\n)>/.test(match)) {             // d)
+
+            var tempTest = /(^|\n)>/.test(match);
+            if (!tempTest) {                          // d)
                 leftOver += match;
                 match = "";
             }
