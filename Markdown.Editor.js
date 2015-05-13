@@ -1,6 +1,12 @@
 // needs Markdown.Converter.js at the moment
 
 (function () {
+    var Markdown;
+    if (typeof exports === "object" && typeof require === "function") {
+        Markdown = module.exports = require('./Markdown.Sanitizer');
+    } else {
+        Markdown = window.Markdown;
+    }
 
     var util = {},
         position = {},

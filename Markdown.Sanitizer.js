@@ -1,8 +1,8 @@
 (function () {
     var output, Converter;
     if (typeof exports === "object" && typeof require === "function") { // we're in a CommonJS (e.g. Node.js) module
-        output = exports;
-        Converter = require("./Markdown.Converter").Converter;
+        var Markdown = module.exports = output = require("./Markdown.Converter");
+        Converter = Markdown.Converter;
     } else {
         output = window.Markdown;
         Converter = output.Converter;
